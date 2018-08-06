@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+  font-family: sans-serif;
+}
+
+body {
+  background: #4b5162;
+  color: #f3f3f3;
+}
+
+button {
+  background: transparent;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
