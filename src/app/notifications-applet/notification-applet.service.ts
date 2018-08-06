@@ -15,7 +15,7 @@ export class NotificationAppletService {
   private panelStateSource: BehaviorSubject<NotificationPanelState> =
       new BehaviorSubject<NotificationPanelState>(this.panelStateData);
 
-  public notification = this.notificationsSource.asObservable();
+  public notifications = this.notificationsSource.asObservable();
   public panelState = this.panelStateSource.asObservable();
 
   constructor() { }
