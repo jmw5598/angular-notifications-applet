@@ -6,7 +6,7 @@ export class Notification {
     public id: number,
     public subject: string,
     public body: string,
-    public level: NotificationLevel
+    public level?: NotificationLevel
   ) {}
 
 }
