@@ -1,0 +1,22 @@
+.input-control {
+  padding: 4px;
+}
+
+.input-control > label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input-control > input {
+  padding: 8px;
+  background: #404552;
+  color: #f7f7f7;
+}
+
+.input-control > button {
+  background: #404552;
+  border-radius: 4px;
+  padding: 8px;
+}

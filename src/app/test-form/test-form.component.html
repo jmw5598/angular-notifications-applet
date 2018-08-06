@@ -1,0 +1,39 @@
+<form (ngSubmit)="submit(form.value)" [formGroup]="form" novalidate>
+  <fieldset>
+    <div class="input-control">
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" formControlName="subject" />
+    </div>
+    <div class="input-control">
+      <label for="body">Body</label>
+      <input type="text" name="body" formControlName="body" />
+    </div>
+    <div class="input-control">
+      <label for="level">Level</label>
+      <div class="input-radio">
+        <input type="radio" name="level" [value]="" formControlName="level" />
+        Default
+      </div>
+      <div class="input-radio">
+        <input type="radio" name="level" [value]="NotificationLevel.SUCCESS" formControlName="level" />
+        Success
+      </div>
+      <div class="input-radio">
+        <input type="radio" name="level" [value]="NotificationLevel.INFO" formControlName="level" />
+        Info
+      </div>
+      <div class="input-radio">
+        <input type="radio" name="level" [value]="NotificationLevel.WARNING" formControlName="level" />
+        Warning
+      </div>
+      <div class="input-radio">
+        <input type="radio" name="level" [value]="NotificationLevel.DANGER" formControlName="level" />
+        Danger
+      </div>
+    </div>
+    <div class="input-control">
+      <button role="button" type="submit">Add Notification</button>
+      <button role="button" type="reset">Reset</button>
+    </div>
+  </fieldset>
+</form>
