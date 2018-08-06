@@ -1,0 +1,11 @@
+.navbar, .content, .panel {
+  padding: 16px;
+}
+
+.navbar {
+  background: #323542;
+}
+
+.panel {
+  background: #383c4a;
+}
