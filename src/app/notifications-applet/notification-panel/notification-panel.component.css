@@ -1,0 +1,31 @@
+.notification-panel {
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background: #383c4a;
+}
+
+.notification-panel:hover {
+  overflow: auto;
+}
+
+.notification-panel-heading {
+  background: #383c4a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #303340;
+  /* border-top: 4px solid #5294e2; */
+}
+
+.notification-panel-heading > div {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 18px;
+}
+
+.notification-panel-body {
+
+}

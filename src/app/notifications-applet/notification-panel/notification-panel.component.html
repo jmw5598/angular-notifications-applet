@@ -1,3 +1,10 @@
-<p>
-  notification-panel works!
-</p>
+<div class="notification-panel dropshadow" *ngIf="panelState">
+  <div class="notification-panel-heading">
+    <div><i class="fas fa-bell" style="margin-right: 8px;"></i>Notifications</div>
+  </div>
+  <div class="notification-panel-body">
+    <app-notification-list
+      [notifications]="notifications">
+    </app-notification-list>
+  </div>
+</div>
