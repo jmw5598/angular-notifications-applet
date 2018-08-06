@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Notification } from '../../../notification.model';
+import { NotificationAppletService } from '../../../notification-applet.service';
 
 @Component({
   selector: 'app-notification',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  notification: Notification;
+
+  constructor(
+    private notificationAppletService: NotificationAppletService
+  ) { }
 
   ngOnInit() {
+  }
+
+  remove(id: number) {
+    this.notificationAppletService.remove(id);
   }
 
 }

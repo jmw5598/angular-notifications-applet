@@ -1,0 +1,43 @@
+.notification {
+  position: relative;
+  border-left: 4px solid #404552;
+  padding: 8px;
+}
+
+.notification-remove {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.notification-subject {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.notification-body {
+  font-size: .9em;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  max-width: 252px;
+}
+
+.notification-level-success {
+  border-left: 4px solid #59f996;
+}
+
+.notification-level-info {
+  border-left: 4px solid #5294e2;
+}
+
+.notification-level-warning {
+  border-left: 4px solid #f9a959;
+}
+
+.notification-level-danger {
+  border-left: 4px solid #f95959;
+}

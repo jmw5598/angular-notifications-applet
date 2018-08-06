@@ -1,3 +1,7 @@
-<p>
-  notification works!
-</p>
+<div class="notification" *ngIf="notification" [ngClass]="notification.level">
+  <div class="notification-header">
+    <h4 class="notification-subject">{{ notification.subject }}</h4>
+    <button class="notification-remove" role="button" (click)="remove(notification.id)"><i class="fas fa-times"></i></button>
+  </div>
+  <p class="notification-body">{{ notification.body }}</p>
+</div>
