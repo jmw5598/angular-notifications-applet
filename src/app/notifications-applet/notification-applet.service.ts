@@ -21,7 +21,7 @@ export class NotificationAppletService {
   constructor() { }
 
   toggle() {
-    if(this.panelStateData = NotificationPanelState.OPEN) {
+    if(this.panelStateData === NotificationPanelState.OPEN) {
       this.panelStateData = NotificationPanelState.CLOSE;
       this.panelStateSource.next(this.panelStateData);
     } else {
