@@ -1,3 +1,4 @@
-<p>
-  notification-indicator works!
-</p>
+<button class="notification-indicator" role="button" (click)="toggle()">
+  <i class="fas fa-bell"></i>
+  <span *ngIf="count || count > 0" class="indicator">{{ count }}</span>
+</button>
