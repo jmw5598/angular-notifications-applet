@@ -19,6 +19,9 @@
 .notification-body {
   font-size: .9em;
   font-style: italic;
+}
+
+.notification-subject, .notification-body {
   white-space: nowrap;
   overflow: hidden;
   display: block;
