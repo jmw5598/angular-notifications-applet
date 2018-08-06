@@ -4,7 +4,7 @@ This is an Angular notifications applet that uses a service to add and remove no
 
 ### Demo
 
-1. Clone the github repository `git clone https://github.com/jmw5598/simple-notes.git`
+1. Clone the github repository `git clone https://github.com/jmw5598/angular-notifications-applet.git`
 2. Run `npm install`.
 3. Serve the Angular frontend with `ng serve`.
 4. Navigate to `http://localhost:4200`
