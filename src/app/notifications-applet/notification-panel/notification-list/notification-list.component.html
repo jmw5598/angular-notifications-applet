@@ -1,3 +1,5 @@
-<p>
-  notification-list works!
-</p>
+<ul *ngIf="notifications" class="notification-list">
+  <li *ngFor="let notification of notifications">
+    <widget-notification [notification]="notification"></widget-notification>
+  </li>
+</ul>
